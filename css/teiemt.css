@@ -1,121 +1,101 @@
-.css-treeview ul,
-.css-treeview li
-{
-	padding: 0;
-	margin: 0;
-	list-style: none;
+*body{
+	margin: 0px;
+	padding: 0px;
+}
+h1{ font:bold 22px Tahoma ; text-align:center;}
+h2{ font:bold 14px Tahoma; }
+p {text-align: justify;}
+
+header, footer, nav, aside, article, section {
+	display:block;
+}
+
+body{
+	width:100% ;
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	background:#f5f0f0;
+}
+
+#bodyWrap{
 	
+	max-width:1000px;
+	margin:20px ;
+	display:-webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-flex: 1;
+}
+
+#headerSection {
+	border-radius: 25px;
+	border: 2px solid black;
+	padding:20px;
+	text-align:center;
+	color:#f5f0f0;;
+	background:-webkit-linear-gradient(top,black,white);/*#98C6EB*/
+	
+}
+#mainDiv{
+	
+	display:-webkit-box;
+	-webkit-box-orient:horizontal;
 	
 }
 
-.css-treeview input
-{
-	position: absolute;
-	opacity: 0;
-	
-}
 
-.css-treeview
-{
-	
-	font: normal 20px "Segoe UI", Arial, Sans-serif;
-	
-	-moz-user-select: none;
-	-webkit-user-select: none;
-	user-select: none;
-	
+#mainSection{
+	border-radius: 25px;
+	margin: 20px 0px;
+	border: 1px solid black;
+	-webkit-box-flex:1;
+	padding: 20px;
+	background-image:url(../images/bgImgmain.jpg)	
 }
+#asideSection{
+	border-radius: 25px;
+	border:1px solid black;
+	width:210px;
+	/*-webkit-box-flex:2;*/
+	padding: 20px;
+	margin:20px ;
+	margin-right:0px;
+	background-image:url(../images/bgImg.gif)
+}
+#imgAside {margin-top:50px;max-width:100%; height:auto;}
+#imgId{opacity: 1;
+-webkit-transition: all 0.7s ease;
+transition: all 0.7s ease; max-width:100%; height:auto;border-radius: 20px;  }
 
-.css-treeview a
-{
-	color: #00f;
-	text-decoration: none;
-}
+#imgId:hover{-webkit-box-shadow: 0px 0px 15px 15px #fff;
+box-shadow: 0px 0px 15px 15px #fff;
+border-radius:20px;
+opacity: 0.7;
+-webkit-transform: rotate(720deg) translate(150px,-50px) scale(1.5,1.5);
+transform: rotate(720deg) translate(150px,-50px) scale(1.5,1.5);
 
-.css-treeview a:hover
-{
-	text-decoration: underline;
-}
+ }
 
-.css-treeview input + label + ul
-{
-	margin: 0 0 0 22px;
+#footerSection h1{
+	border-top:1px solid #513D87;
+	margin:2px;
+	text-align:center;
+	padding:15px;
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
 }
-
-.css-treeview input + label + ul
-{
-	display: none;
+#bodyWrap #mainDiv #asideSection h1 {
+	 font-size: 1.5em;
+	-webkit-text-stroke: .5px darkgrey;
+  -webkit-text-fill-color: white;
+  -webkit-animation: fill 0.5s infinite alternate;
 }
-
-.css-treeview label,
-.css-treeview label::before
-{
-	cursor: pointer;
+@-webkit-keyframes fill {
+  from { -webkit-text-fill-color: #97CCAA; }
+  to { -webkit-text-fill-color: #f5f0f0; }
 }
-
-.css-treeview input:disabled + label
-{
-	cursor: default;
-	opacity: .6;
-}
-
-.css-treeview input:checked:not(:disabled) + label + ul
-{
-	display: block;
-}
-
-.css-treeview label,
-.css-treeview label::before
-{
-	background: url("http://experiments.wemakesites.net/pages/css3-treeview/example/icons.png") no-repeat;
-}
-
-.css-treeview label,
-.css-treeview a,
-.css-treeview label::before
-{
-	display: inline-block;
-	height: 16px;
-	line-height: 16px;,
-	vertical-align: middle;
-}
-
-.css-treeview label
-{
-	background-position: 18px 0;
-}
-
-.css-treeview label::before
-{
-	content: "";
-	width: 16px;
-	margin: 0 22px 0 0;
-	vertical-align: middle;
-	background-position: 0 -32px;
-}
-
-.css-treeview input:checked + label::before
-{
-	background-position: 0 -16px;
-}
-
-/* webkit adjacent element selector bugfix */
-@media screen and (-webkit-min-device-pixel-ratio:0)
-{
-	.css-treeview 
-	{
-		-webkit-animation: webkit-adjacent-element-selector-bugfix infinite 1s;
-	}
-	
-	@-webkit-keyframes webkit-adjacent-element-selector-bugfix 
-	{
-		from 
-		{ 
-			padding: 0;
-		} 
-		to 
-		{ 
-			padding: 0;
-		}
-	}
-}
+a{ text-decoration:none;}
+a:link {color: blue;}
+a:visited {color: black;}
+a:hover {color: red;}
+/*a:focus {color: black; font-weight: bold;text-decoration: line-through;}*/
+a:active {color: white;}
