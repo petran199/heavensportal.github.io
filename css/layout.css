@@ -325,28 +325,38 @@ ul#nav li.current a { color: #F06000; }
    border-radius: 3px 0 0 3px;
 }
 
-.C {
-  	width: 85%;
-  	-moz-animation: C 2s ease;
-  	-webkit-animation: C 2s ease;
+.Cpp {
+  	width: 80%;
+  	-moz-animation: Cpp 2s ease;
+  	-webkit-animation: Cpp 2s ease;
 }
 .python {
-  	width: 15%;
+  	width: 21%;
   	-moz-animation: python 2s ease;
   	-webkit-animation: python 2s ease;
 }
-.java {
-  	width: 10%;
-  	-moz-animation: java 2s ease;
-  	-webkit-animation: java 2s ease;
+.javascript {
+  	width: 45%;
+  	-moz-animation: javascript 2s ease;
+  	-webkit-animation: javascript 2s ease;
 }
-.css {
-  	width: 17%;
-  	-moz-animation: css 2s ease;
-  	-webkit-animation: css 2s ease;
+.javaFX {
+  	width: 10%;
+  	-moz-animation: javaFX 2s ease;
+  	-webkit-animation: javaFX 2s ease;
+}
+.scala {
+  	width: 25%;
+  	-moz-animation: scala 2s ease;
+  	-webkit-animation: scala 2s ease;
+}
+.css3 {
+  	width: 47%;
+  	-moz-animation: css3 2s ease;
+  	-webkit-animation: css3 2s ease;
 }
 .html5 {
-  	width: 30%;
+  	width: 70%;
   	-moz-animation: html5 2s ease;
   	-webkit-animation: html5 2s ease;
 }
@@ -356,35 +366,43 @@ ul#nav li.current a { color: #F06000; }
   	-webkit-animation: mysql 2s ease;
 }
 .assembly {
-  	width: 35%;
+  	width: 30%;
   	-moz-animation: assembly 2s ease;
   	-webkit-animation: assembly 2s ease;
 }
-.c1 {
-  	width: 25%;
-  	-moz-animation: c1 2s ease;
-  	-webkit-animation: c1 2s ease;
+.cSharp {
+  	width: 27%;
+  	-moz-animation: cSharp 2s ease;
+  	-webkit-animation: cSharp 2s ease;
 }
 
-@-moz-keyframes C {
+@-moz-keyframes Cpp {
   0%   { width: 0px;  }
-  100% { width: 85%;  }
+  100% { width: 80%;  }
+}
+@-moz-keyframes scala {
+  0%   { width: 0px;  }
+  100% { width: 25%;  }
 }
 @-moz-keyframes python {
   0%   { width: 0px;  }
-  100% { width: 15%;  }
+  100% { width: 21%;  }
 }
-@-moz-keyframes java {
+@-moz-keyframes javaFX {
   0%   { width: 0px;  }
   100% { width: 10%;  }
 }
-@-moz-keyframes css {
+@-moz-keyframes css3 {
   0%   { width: 0px;  }
-  100% { width: 17%;  }
+  100% { width: 47%;  }
+}
+@-moz-keyframes javascript {
+  0%   { width: 0px;  }
+  100% { width: 45%;  }
 }
 @-moz-keyframes html5 {
   0%   { width: 0px;  }
-  100% { width: 0%;  }
+  100% { width: 70%;  }
 }
 @-moz-keyframes mysql {
   0%   { width: 0px;  }
@@ -392,32 +410,40 @@ ul#nav li.current a { color: #F06000; }
 }
 @-moz-keyframes assembly {
   0%   { width: 0px;  }
-  100% { width: 35%;  }
+  100% { width: 30%;  }
 }
-@-moz-keyframes c1 {
+@-moz-keyframes cSharp {
+  0%   { width: 0px;  }
+  100% { width: 27%;  }
+}
+
+@-webkit-keyframes Cpp {
+  0%   { width: 0px;  }
+  100% { width: 80%;  }
+}
+@-webkit-keyframes scala {
   0%   { width: 0px;  }
   100% { width: 25%;  }
 }
-
-@-webkit-keyframes C {
-  0%   { width: 0px;  }
-  100% { width: 85%;  }
-}
 @-webkit-keyframes python {
   0%   { width: 0px;  }
-  100% { width: 15%;  }
+  100% { width: 21%;  }
 }
-@-webkit-keyframes java {
+@-webkit-keyframes javaFX {
   0%   { width: 0px;  }
   100% { width: 10%;  }
 }
-@-webkit-keyframes css {
+@-webkit-keyframes css3 {
   0%   { width: 0px;  }
-  100% { width: 17%;  }
+  100% { width: 47%;  }
+}
+@-webkit-keyframes javascript {
+  0%   { width: 0px;  }
+  100% { width: 45%;  }
 }
 @-webkit-keyframes html5 {
   0%   { width: 0px;  }
-  100% { width: 30%;  }
+  100% { width: 70%;  }
 }
 @-webkit-keyframes mysql {
   0%   { width: 0px;  }
@@ -425,11 +451,11 @@ ul#nav li.current a { color: #F06000; }
 }
 @-webkit-keyframes assembly {
   0%   { width: 0px;  }
-  100% { width: 35%;  }
+  100% { width: 30%;  }
 }
-@-webkit-keyframes c1 {
+@-webkit-keyframes cSharp {
   0%   { width: 0px;  }
-  100% { width: 25%;  }
+  100% { width: 27%;  }
 }
 
 /* ------------------------------------------------------------------ */
